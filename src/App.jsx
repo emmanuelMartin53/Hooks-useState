@@ -1,6 +1,7 @@
 
 import ClassState from './components/ClassState';
 import FunctionState from './components/FunctionState'
+import Todo from './components/Todo';
 
 import './App.css'
 
@@ -8,11 +9,13 @@ const App = () => {
 
 
   return (
-   <div>
-      <h1 className="text-center">useState Hooks</h1>
+   <div className='container'>
+      {/* <h1 className="text-center">useState Hooks</h1>
 
       <ClassState />
-      <FunctionState />
+      <FunctionState /> */}
+
+      <Todo />
    </div>
   )
 }
