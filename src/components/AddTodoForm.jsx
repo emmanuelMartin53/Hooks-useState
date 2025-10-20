@@ -5,7 +5,7 @@ const AddTodoForm = ({newTodo}) => {
 
   const [addTodo, setAddTodo] = useState('')
 
-  console.log(addTodo)
+  // console.log(addTodo)
 
   const handleTodo = (event) => {
     event.preventDefault()

@@ -14,16 +14,16 @@ const Todo = () => {
 
   const [warning, setWarning] = useState(false)
 
-  const myTodos = todos.map((todo) => {
+  const myTodos = todos.map((todo, index) => {
     return (
-      <li className="list-group-item" key={todo.id}>{todo.todo}</li>
+      <li className="list-group-item" key={index}>{todo.todo}</li>
     )
   })
 
   const addNewTodo = (newTodo) => {
 
     if (newTodo !== "") {
-      
+
      warning && setWarning(false)
 
       setTodos([
